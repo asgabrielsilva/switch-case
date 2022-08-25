@@ -4,11 +4,23 @@
     */
 
     //ENTRADA
-
+const numero = Number(prompt("Informe um numero inteiro:")).match.floor(0);
+let mensagemFinal;
     
     //PROCESSAMENTO
+    switch (numero) {
+        case (numero % 2 === 0):
+            mensagemFinal = "É um numero inteiro";
+            break;
+        case (numero % 2 === 1):
+            mensagemFinal = "Não é um numero inteiro";
+            break;
+        default:
+            mensagemFinal = "COMO TU CONSEGUIU?!?!";
+            break;
+    }
 
     
     //SAÍDA
-
+document.write(mensagemFinal);
 </script>

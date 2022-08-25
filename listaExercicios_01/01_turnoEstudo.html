@@ -11,11 +11,26 @@
     */
 
     //ENTRADA
-
+const turno = prompt("Indique seu turno com: M(Matutino), V(Vespertino) e N(Noturno)").toUpperCase();
+let mensagemFinal;
     
     //PROCESSAMENTO
-
+switch (turno) {
+    case "M":
+        mensagemFinal = "Bom dia";
+        break;
+    case "V":
+        mensagemFinal = "Boa tarde";
+        break;
+    case "N":
+        mensagemFinal = "Boa noite";
+        break;
+        default:
+            mensagemFinal = "Valor inválido";
+            break;
+}
     
     //SAÍDA
+    document.write(mensagemFinal);
 
 </script>
